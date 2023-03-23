@@ -1,0 +1,43 @@
+.principal{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+}
+
+.menu li, .finalpagina li {
+    display: inline;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    
+}
+.ofertas-destacadas{
+    display: flex;
+    background-color: bisque;
+    justify-content: center;
+}
+.categoria-productos{
+    display: flex;
+    background-color: cadetblue;
+    justify-content: center;
+}
+
+ #l1:hover, #l2:hover, #l3:hover, #l4:hover, #l5:hover{
+    
+    color: blue;
+    background-color: rgb(165, 192, 211);
+} 
+.finalpagina{
+    display: flex;
+    justify-content: center;
+}
