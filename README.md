@@ -46,7 +46,7 @@ Ya teniendo corriendo el proyecto puedes iniciar seccion!😎
 
 Credenciales🎫:
 ~~~
-Usuario: Demo  |  Contraseña: 123
+Usuario: demo  |  Contraseña: 123
 ~~~
 
 Esperamos que sea de tu agrado!!! 🤗
