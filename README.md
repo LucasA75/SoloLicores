@@ -27,6 +27,9 @@ PD: No puedes ingresar al enlace iniciar seccion ya que eso esta en la 2 parte ð
 Para ver la **segunda parte** del proyecto es necesario tener [Node.js](https://nodejs.org/en) instalado 
 
 - Primero clonar este repositorio
+~~~
+git clone https://github.com/LucasA75/TuCopete.git
+~~~
 
 - Segundo ejecutar este codigo en la terminal de la carpeta clonada
 ~~~
