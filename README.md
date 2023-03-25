@@ -67,6 +67,11 @@ xdlukis77@gmail.com
 - [@LucasA75](https://github.com/LucasA75) - Product Manager | Developer
 - [@Abrilonia](https://github.com/abrilonia) - Developer
 
+## Inspiracion 🔎
+
+- [Knasta](https://knasta.cl/)
+
+- [SoloTodo](https://www.solotodo.cl/)
 
 ## License
 
