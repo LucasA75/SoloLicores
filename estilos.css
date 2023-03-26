@@ -1,43 +1,81 @@
-.principal{
-    display: flex;
-    flex-direction: column;
+body{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    width: 100%;
 }
 
-header {
+
+/* HEADER */
+
+.Navbar{
     display: flex;
+    position: fixed;
+    width: 100vw;
     justify-content: space-between;
+    align-content: center;
+    background-color: rgb(0, 0, 0);
     margin: 0;
-    padding: 0;
-    background-color: aquamarine;
+    color: white;
 }
 
-.menu li, .finalpagina li {
-    display: inline;
+.Navbar h2{
+    margin-left: 15px;
 }
+
+.Nav__menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 50px;
+}
+.Nav__link a{
+    text-decoration: none;
+    color: white;
+}
+
+
+header h1{
+    margin: 0;
+    padding: 15px 0px;
+}
+
+/* MAIN */
 main{
     display: flex;
     flex-direction: column;
     
 }
+
+/* MAIN IMAGE */
+.Imagen__Principal{
+    background-image: url(./assets/bg-alcohol-main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.Imagen__Principal p{
+    width: 80%;
+    margin: 0 auto;
+}
 .ofertas-destacadas{
     display: flex;
-    background-color: bisque;
+    background-color: orange;
+    min-height: 30vh;
     justify-content: center;
 }
 .categoria-productos{
     display: flex;
     background-color: cadetblue;
+    min-height: 30vh;
     justify-content: center;
 }
 
- #l1:hover, #l2:hover, #l3:hover, #l4:hover, #l5:hover{
-    
-    color: blue;
-    background-color: rgb(165, 192, 211);
-} 
-.finalpagina{
-    display: flex;
-    justify-content: center;
-}
+
