@@ -1,7 +1,7 @@
 
-# TuCopete 🍺
+# SoloLicores 🍺
 
-TuCopete es una página web que se especializa en proporcionar a los usuarios una amplia variedad de opciones para comprar bebidas alcohólicas a precios asequibles. Además de ofrecer información sobre las mejores ofertas en licores y destilados, también proporciona a los usuarios detalles sobre la calidad y características de cada producto en particular. En TuCopete, los usuarios pueden encontrar una amplia gama de licores, desde cervezas y vinos hasta tequilas y whiskies, y pueden comparar precios y opciones de diferentes minoristas para asegurarse de que están obteniendo el mejor valor por su dinero. También hay una sección de blog donde los usuarios pueden aprender más sobre el mundo del alcohol y obtener consejos y recomendaciones sobre cómo disfrutar de sus bebidas favoritas de la mejor manera posible.
+SoloLicores es una página web que se especializa en proporcionar a los usuarios una amplia variedad de opciones para comprar bebidas alcohólicas a precios asequibles. Además de ofrecer información sobre las mejores ofertas en licores y destilados, también proporciona a los usuarios detalles sobre la calidad y características de cada producto en particular. En TuCopete, los usuarios pueden encontrar una amplia gama de licores, desde cervezas y vinos hasta tequilas y whiskies, y pueden comparar precios y opciones de diferentes minoristas para asegurarse de que están obteniendo el mejor valor por su dinero. También hay una sección de blog donde los usuarios pueden aprender más sobre el mundo del alcohol y obtener consejos y recomendaciones sobre cómo disfrutar de sus bebidas favoritas de la mejor manera posible.
 
 
 
