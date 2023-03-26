@@ -39,5 +39,16 @@ main{
 } 
 .finalpagina{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    background-color: blue;
+    color: white;
+}
+
+.finalpagina li a {
+    color: white;
+}
+
+.nombre-finalpagina {
+    align-self: baseline;
 }
