@@ -6,7 +6,7 @@ body{
 }
 
 
-/* HEADER */
+/* NAVBAR */
 
 .Navbar{
     display: flex;
@@ -34,10 +34,41 @@ body{
     color: white;
 }
 
+/* Boton NAVBAR */
+.Nav__btnIniciar{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 10em;
+    height: 3em;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    cursor: pointer;
+}
 
-header h1{
-    margin: 0;
-    padding: 15px 0px;
+.Nav__btnIniciar img{
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    
+    from{
+        transform: 0;
+    }
+
+    to{
+
+        transform: rotate(360deg);
+    }
+
+}
+
+.Nav__btnIniciar:hover{
+    scale: 1.02;
 }
 
 /* MAIN */
@@ -65,6 +96,8 @@ main{
     width: 80%;
     margin: 0 auto;
 }
+
+/* MAIN SECCIONS */
 .ofertas-destacadas{
     display: flex;
     background-color: orange;
