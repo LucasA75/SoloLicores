@@ -68,14 +68,20 @@ main{
 .ofertas-destacadas{
     display: flex;
     background-color: orange;
-    min-height: 30vh;
+    min-height: 50vh;
     justify-content: center;
 }
 .categoria-productos{
     display: flex;
     background-color: cadetblue;
-    min-height: 30vh;
+    min-height: 40vh;
     justify-content: center;
 }
 
+.preparaciones{
+    display: flex;
+    background-color: #ade8f4;
+    min-height: 40vh;
+    justify-content: center;
+}
 
