@@ -1,4 +1,9 @@
-body{
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+}
+
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,10 +13,11 @@ body{
 
 /* NAVBAR */
 
-.Navbar{
+.Navbar {
     display: flex;
     position: fixed;
     width: 100vw;
+    z-index: 5;
     justify-content: space-between;
     align-content: center;
     background-color: rgb(0, 0, 0);
@@ -19,7 +25,7 @@ body{
     color: white;
 }
 
-.Navbar h2{
+.Navbar h2 {
     margin-left: 15px;
 }
 
@@ -29,13 +35,14 @@ body{
     gap: 30px;
     margin-right: 50px;
 }
-.Nav__link a{
+
+.Nav__link a {
     text-decoration: none;
     color: white;
 }
 
 /* Boton NAVBAR */
-.Nav__btnIniciar{
+.Nav__btnIniciar {
     position: relative;
     background-color: rgb(255, 255, 255);
     width: 10em;
@@ -48,73 +55,126 @@ body{
     cursor: pointer;
 }
 
-.Nav__btnIniciar img{
+.Nav__btnIniciar img {
     animation-name: rotate;
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
 @keyframes rotate {
-    
-    from{
+
+    from {
         transform: 0;
     }
 
-    to{
+    50% {
 
-        transform: rotate(360deg);
+        transform: rotate(45deg);
     }
 
+    to {
+        transform: rotate(0deg);
+    }
 }
 
-.Nav__btnIniciar:hover{
+.Nav__btnIniciar:hover {
     scale: 1.02;
 }
 
 /* MAIN */
-main{
+main {
     display: flex;
     flex-direction: column;
-    
+
 }
 
 /* MAIN IMAGE */
-.Imagen__Principal{
+.Header__Principal {
     background-image: url(./assets/bg-alcohol-main.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
+    z-index: 1;
     height: 100vh;
+    color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+@media  all and (max-width:900px) {
+    .Header__Principal{
+       display: flex;
+       flex-direction: column-reverse;
+       grid-template-columns: none;
+       justify-content: center;
+       gap: 5%;
+    }
+    .Descripcion__Principal{
+        display: block;
+    }
+
+}
+
+.Header__img{
+    width: 80%;
+    height: 40%;
+    grid-area: 1 /2/1/2;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
+    align-self: center;
+    position: relative;
 }
 
-.Imagen__Principal p{
-    width: 80%;
-    margin: 0 auto;
+.Header__img img{
+    transform: rotate(30deg);
 }
+
+.Header__img::before{
+    content: "";
+    position: absolute;
+    width: 25em;
+    height: 120%;
+    border-radius: 300px;
+    top: -30px;
+    background-color: rgba(255, 255, 255, 0.628);
+    z-index: -1 !important;
+
+}
+
+.Descripcion__Principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+}
+
+.Descripcion__Principal h1{
+    font-size: 5em;
+}
+.Descripcion__Principal p{
+    font-size: 1.2em;
+    width: 80%;
+}
+
 
 /* MAIN SECCIONS */
-.ofertas-destacadas{
+.ofertas-destacadas {
     display: flex;
     background-color: orange;
     min-height: 50vh;
     justify-content: center;
 }
-.categoria-productos{
+
+.categoria-productos {
     display: flex;
     background-color: cadetblue;
     min-height: 40vh;
     justify-content: center;
 }
 
-.preparaciones{
+.preparaciones {
     display: flex;
     background-color: #ade8f4;
     min-height: 40vh;
     justify-content: center;
 }
-
