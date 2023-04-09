@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root{
+    --blanco : #FFFFFF;
+    --fondoNegro: rgb(15 23 42);
+    --gris-400 : rgb(148 163 184);
+    --gris-500: rgb(100 116 139);
+    --gris-300 : rgb(203 213 225);
+}
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 60px;
@@ -10,6 +19,7 @@ body {
     box-sizing: border-box;
     width: 100%;
     font-family: 'Roboto', sans-serif;
+    background-color: var(--fondoNegro);
 }
 
 
@@ -92,15 +102,17 @@ main {
 
 /* MAIN IMAGE */
 .Header__Principal {
-    background-image: url(./assets/bg-alcohol-main.jpg);
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(./assets/bg-alcohol-main.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-attachment: fixed;
     z-index: 1;
     height: 100vh;
     color: white;
     display: grid;
     grid-template-columns: 50% 50%;
+
+
 }
 
 @media  all and (max-width:900px) {
@@ -154,31 +166,105 @@ main {
     font-size: 5em;
 }
 .Descripcion__Principal p{
-    font-size: 1.2em;
+    font-size: 1.4em;
     width: 80%;
+    text-align: center;
 }
 
 
 /* MAIN SECCIONS */
 
-/* Tipo de Clientes Section */
-.tipo_cliente{
-    min-height: 80vh;
+/* Intro */
+
+.introduccion{
+    color: #FFFFFF;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color:  var(--fondoNegro);
+}
+
+/* Main_Intro */
+.intro_header{
+    color: rgba(255, 255, 255, 0.963);
+    width: 80%;
+}
+
+.intro_header h2{
+    text-align: center; font-size: 40px;
+    color: var(--gris-300);
+}
+
+.intro_header p{
+    font-size: 20px;
+    color: var(--gris-400);
+}
+
+/* Main_EXP */
+
+.intro_experiencia{
+    color: black;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap: 15px;
+    width: 90%;
+}
+
+
+
+.card_exp{
+    width: 25%;
+    color: #FFF9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(71 85 105);
+    padding: 30px;
+}
+.card_exp .card_exp_img{
+    margin-top: 10px;
+}
+
+.card_exp .card_exp_exp{
+    width: 80%;
+    padding: 0 10px;
+    border-bottom: 1px solid var(--gris-500);
+}
+
+
+
+/* Tipo de Clientes Section */
+.tipo_cliente .intro_header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+.tipo_cliente_cards{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5em;
+    background-color: var(--fondoNegro);
 }
 
 .tipo_cliente .card{
     padding: 30px;
-    margin: 120px 30px;
+    margin: 50px 30px;
     box-shadow: 4px 10px 10px 5px rgba(0, 0, 0, 0.299);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    background-color: #FFFFFF;
 }
 .tipo_cliente .card h3{
     font-size: 30px;
@@ -215,27 +301,39 @@ main {
     font-weight: 600;
 }
 
+/* Footer */
 
-
-
-
-.ofertas-destacadas {
+.footer{
+    background-color: #6c95fdc1;
+    color: #FFFFFF;
     display: flex;
-    background-color: orange;
-    min-height: 50vh;
-    justify-content: center;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    box-shadow:inset 0px 4px 5px -2px rgba(0,0,0,0.75);
 }
 
-.categoria-productos {
+.footer__nav{
     display: flex;
-    background-color: cadetblue;
-    min-height: 40vh;
-    justify-content: center;
+    gap: 80px;
 }
 
-.preparaciones {
+.footer__nav a{
+    text-decoration: none;
+}
+
+.nav__title{
+    text-align: center;
+    list-style: none;
+}
+
+.nav__item {
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer__nav ul{
+    list-style: none;
     display: flex;
-    background-color: #ade8f4;
-    min-height: 40vh;
-    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
 }
