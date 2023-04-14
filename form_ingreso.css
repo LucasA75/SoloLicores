@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #181818;
+    color: #fff;
+    line-height: 1.6;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0 1.5em;
+    display: flex;
+    justify-content: center;
+}
+
+.form_ingreso {
+    background: #222222;
+    width: 700px;
+    margin-top: 80px;  
+    border-radius: 10px; 
+   
+}
+.form_ingreso h2 {
+    text-align: center;
+    padding: 0.4em;
+}
+
+.form_ingreso form {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: .5em;
+}
+
+.form_ingreso form label {
+    display: block;
+}
+
+.form_ingreso form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.form_ingreso form button,
+.form_ingreso form input
+ {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #d63031;
+}
+.form_ingreso form select{
+    border-radius: 5px;
+}
+
+.form_ingreso form button {
+    background: #B70E21;
+    border: 0;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.form_ingreso form button:hover,
+.form_ingreso form button:focus {
+    background: #d63031;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+/* #form { 
+  width: 450px;
+  margin: auto;
+  margin-top: 20px;
+} */
+
+/* @media (max-width: 450px){
+    width: 100%;
+} */
+    
+/*   input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    outline: none;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  .btn-submit {
+    border: none;
+    padding: 14px;
+    font-weight: 800;
+
+  }
+    
+.error {
+
+    background: #FF4C4C;
+    padding: 10px;
+    border-radius: 7px;
+
+}
+ 
+.correcto {
+    padding: 10px;
+  border-radius: 7px;
+  background: #81C081;
+}
+ 
+  
+.info p {
+    color: #ccc;
+    font-size: 12px;
+    text-align: right;
+
+} */
+ 
