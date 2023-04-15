@@ -13,7 +13,10 @@ Esta página cuenta con **2 partes**:
  HTML | CSS | Javascript puro
 
 **Segunda parte** privada esta hecha con:
-React.js | Vite | Boostrap | framer-motion 
+React.js | Next.js | Boostrap | framer-motion 
+
+**Back_end**
+Node.js | Fastify | Firebase
 
 ## Como ocupar el proyecto ✨
  Para ver la **primera parte** de este proyecto ingresa a este enlace:
