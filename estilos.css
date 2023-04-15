@@ -234,6 +234,20 @@ main {
     border-bottom: 1px solid var(--gris-500);
 }
 
+/* MAIN_EXP Responsive */
+
+@media screen and (max-width:800px) {
+    .intro_experiencia{
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+        gap: 15px;
+    }
+
+    .card_exp{
+        width: 80%;
+    }
+}
 
 
 /* Tipo de Clientes Section */
@@ -253,6 +267,7 @@ main {
     justify-content: center;
     gap: 5em;
     background-color: var(--fondoNegro);
+    margin-bottom: 30px;
 }
 
 .tipo_cliente .card{
@@ -267,10 +282,15 @@ main {
     background-color: #FFFFFF;
 }
 .tipo_cliente .card h3{
-    font-size: 30px;
+    font-size: 35px;
+    height: 40px;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    display: flex;
+    align-items: center;
 }
 .tipo_cliente .card span{
-    width: 80%;
     text-align: center;
     border-bottom: 1px solid black;
 }
@@ -299,6 +319,19 @@ main {
     border-radius: 25px;
     font-size: 20px;
     font-weight: 600;
+}
+
+/* TIPO CLIENTE RESPONSIVE */
+
+@media screen and (max-width:800px){
+    .tipo_cliente_cards{
+        flex-direction: column-reverse;
+    }
+
+    .tipo_cliente .card{
+        max-width: 60%;
+        margin: 0 auto;
+    }
 }
 
 /* Footer */
