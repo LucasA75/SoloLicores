@@ -17,7 +17,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    width: 100%;
     font-family: 'Roboto', sans-serif;
     background-color: var(--fondoNegro);
 }
@@ -25,16 +24,21 @@ body {
 
 /* NAVBAR */
 
-.Navbar {
+header {
     display: flex;
-    position: fixed;
-    width: 100vw;
-    z-index: 5;
-    justify-content: space-between;
-    align-content: center;
-    background-color: rgb(0, 0, 0);
+    flex-direction: row;
     margin: 0;
     color: white;
+}
+
+.Navbar{
+    width: 100%;
+    z-index: 5;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
 }
 
 .Navbar h2 {
@@ -107,31 +111,17 @@ main {
     background-repeat: no-repeat;
     background-attachment: fixed;
     z-index: 1;
-    height: 100vh;
+    min-height: 100vh;
     color: white;
-    display: grid;
-    grid-template-columns: 50% 50%;
-
-
+    display: flex;
+    flex-direction: row-reverse;
 }
 
-@media  all and (max-width:900px) {
-    .Header__Principal{
-       display: flex;
-       flex-direction: column-reverse;
-       grid-template-columns: none;
-       justify-content: center;
-       gap: 5%;
-    }
-    .Descripcion__Principal{
-        display: block;
-    }
-
-}
 
 .Header__img{
+    margin-top: 20px;
     width: 80%;
-    height: 40%;
+    height: 10em;
     grid-area: 1 /2/1/2;
     display: flex;
     justify-content: center;
@@ -140,6 +130,7 @@ main {
 }
 
 .Header__img img{
+    overflow: hidden;
     transform: rotate(30deg);
 }
 
@@ -163,7 +154,8 @@ main {
 }
 
 .Descripcion__Principal h1{
-    font-size: 5em;
+    font-size: 5rem;
+    text-align: center;
 }
 .Descripcion__Principal p{
     font-size: 1.4em;
@@ -171,7 +163,25 @@ main {
     text-align: center;
 }
 
+@media  all and (max-width:900px) {
+    .Header__Principal{
+       display: flex;
+       flex-direction: column-reverse;
+       justify-content: center;
+       align-items: center;
+       gap: 5%;
+    }
 
+    .Descripcion__Principal h1{
+        font-size: 3em;
+
+    }
+
+    .Header__img::before{
+        width: 80%;
+    }
+
+}
 /* MAIN SECCIONS */
 
 /* Intro */
