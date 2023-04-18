@@ -97,6 +97,19 @@ header {
     scale: 1.02;
 }
 
+@media  all and (max-width:1200px){
+
+header{
+    overflow: hidden;
+}
+
+}
+
+
+
+
+
+
 /* MAIN */
 main {
     display: flex;
@@ -115,14 +128,14 @@ main {
     color: white;
     display: flex;
     flex-direction: row-reverse;
+    padding-bottom: 30px;
 }
 
 
 .Header__img{
     margin-top: 20px;
-    width: 80%;
-    height: 10em;
-    grid-area: 1 /2/1/2;
+    width: 50%;
+    height: 30em;
     display: flex;
     justify-content: center;
     align-self: center;
@@ -143,6 +156,7 @@ main {
     top: -30px;
     background-color: rgba(255, 255, 255, 0.628);
     z-index: -1 !important;
+    overflow: hidden;
 
 }
 
@@ -154,7 +168,7 @@ main {
 }
 
 .Descripcion__Principal h1{
-    font-size: 5rem;
+    font-size: 8vw;
     text-align: center;
 }
 .Descripcion__Principal p{
@@ -167,14 +181,29 @@ main {
     .Header__Principal{
        display: flex;
        flex-direction: column-reverse;
-       justify-content: center;
+       justify-content: flex-end;
        align-items: center;
        gap: 5%;
+       padding: 0;
+    }
+
+    .Descripcion__Principal {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items:center ;
+        margin-top: 45px;
     }
 
     .Descripcion__Principal h1{
-        font-size: 3em;
+        font-size: 3.5em;
 
+    }
+
+    .Header__img{
+        margin-top: 20px;
+        width: 50%;
+        height: 15em;
     }
 
     .Header__img::before{
@@ -353,6 +382,7 @@ main {
     justify-content: space-around;
     padding-bottom: 50px;
     box-shadow:inset 0px 4px 5px -2px rgba(0,0,0,0.75);
+    width: 100vw;
 }
 
 .footer__nav{
@@ -379,4 +409,32 @@ main {
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+@media All and (max-width: 500px) {
+
+    .footer__addr{
+        text-align: center;
+    }
+
+
+    .footer{
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__nav{
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+    }
+
+    .footer__nav ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: 5px;
+    }
 }
