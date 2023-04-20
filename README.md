@@ -9,10 +9,10 @@ SoloLicores es una página web que se especializa en proporcionar a los usuarios
 
 Esta página cuenta con **2 partes**: 
 
-**Primera parte** publica esta hecha con:
+**Primera parte** Publica esta hecha con:
  HTML | CSS | Javascript puro
 
-**Segunda parte** privada esta hecha con:
+**Segunda parte** Privada esta hecha con:
 React.js | Next.js | Boostrap | framer-motion 
 
 **Back_end**
