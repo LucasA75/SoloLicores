@@ -414,7 +414,8 @@ main {
 @media All and (max-width: 500px) {
 
     .footer__addr{
-        text-align: center;
+        text-align: center; 
+        
     }
 
 
