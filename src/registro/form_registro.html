@@ -4,18 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de ingreso</title>
-    <link rel="stylesheet" href="form_ingreso.css">
-    <script src="form_ingreso.js" defer></script>
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="./form_registro.css">
+    <script src="./form_registro.js" defer></script>
 </head>
 <body>
     <div>
-        <header>
-
-        </header>
-        <main  class="form_ingreso">
-            <h2>Formulario de Ingreso</h2>
-            <form action="">
+        <main  class="formRegistro">
+            <h2>Formulario de Registro</h2>
+            <form action="" method="post">
                 <label for="name">Nombre:</label>
                 <input type="text" id="name" name="name" placeholder="Ingrese su nombre" required><br>
 
@@ -32,7 +29,7 @@
                     <div id="resultado"></div>
 
                 <label for="password2">Repetir Contraseña:</label>
-                <input type="password2" id="password2" name="password2" placeholder="Clave secreta" required><br>
+                <input type="password" id="password2" name="password2" placeholder="Clave secreta" required><br>
 
                 <label for="licor">Licor favorito:</label>
                     <select name="licor" id="licor">
