@@ -22,6 +22,7 @@ body {
 }
 
 
+
 /* NAVBAR */
 
 header {
@@ -39,6 +40,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-content: center;
+    overflow: scroll;
 }
 
 .Navbar h2 {
@@ -360,6 +362,16 @@ main {
     font-weight: 600;
 }
 
+.tipo_cliente .btn_registrar a{
+    text-decoration: none;
+    color: black;
+}
+
+.tipo_cliente .btn_registrar a:link, .tipo_cliente .btn_registrar a:visited{
+    text-decoration: none;
+}
+
+
 /* TIPO CLIENTE RESPONSIVE */
 
 @media screen and (max-width:800px){
@@ -383,6 +395,7 @@ main {
     padding-bottom: 50px;
     box-shadow:inset 0px 4px 5px -2px rgba(0,0,0,0.75);
     width: 100vw;
+    flex-wrap: wrap;
 }
 
 .footer__nav{
@@ -411,11 +424,11 @@ main {
     gap: 5px;
 }
 
-@media All and (max-width: 500px) {
+@media All and (max-width: 600px) {
 
     .footer__addr{
         text-align: center; 
-        
+
     }
 
 
