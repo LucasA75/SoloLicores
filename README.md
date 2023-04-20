@@ -11,9 +11,13 @@ Esta página cuenta con **2 partes**:
 
 **Primera parte** Publica esta hecha con:
  HTML | CSS | Javascript puro
-
+ 
+ **Restricción**: ocupo solamente display: Flex
+#
 **Segunda parte** Privada esta hecha con:
 React.js | Next.js | Boostrap | framer-motion 
+
+ **Restricción**: ocupo solamente display: Grid
 
 **Back_end**
 Node.js | Fastify | Firebase
