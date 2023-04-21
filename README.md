@@ -15,10 +15,10 @@ Esta página cuenta con **2 partes**:
  **Restricción**: ocupo solamente display: Flex
 #
 **Segunda parte** Privada esta hecha con:
-React.js | Next.js | Boostrap | framer-motion 
+React.js | Next.js | CSS 
 
  **Restricción**: ocupo solamente display: Grid
-
+#
 **Back_end**
 Node.js | Fastify | Firebase
 
