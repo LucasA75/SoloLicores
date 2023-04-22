@@ -10,47 +10,48 @@
 </head>
 
 <body>
-    <header>
-        <div class="Navbar">
-            <h2>SoloLicores</h2>
-            <nav class="Nav__menu">
-                <div class="Nav__link">
-                    <a href="#ofertas" id="l1">Licores</a>
-                </div>
-                <div class="Nav__link">
-                    <a href="#" id="l2">Nosotros</a>
-                </div>
-                <div class="Nav__link">
-                    <a href="./src/registro/form_registro.html" id="l3">Registrate</a>
-                </div>
-                <div class="Nav__link">
-                    <a href="./src/ingreso/form_ingreso.html">
-                        <button class="Nav__btnIniciar">Iniciar Seccion<img src="./assets/arrow-up-right.svg" /></button>
-                    </a>
-                </div>
-            </nav>
-        </div>
+    <header class="Navbar">
+        <h2>SoloLicores</h2>
+        <nav class="Nav__menu">
+            <div class="Nav__link">
+                <a href="./index.html" id="l1">Home</a>
+            </div>
+            <div class="Nav__link">
+                <a href="#" id="l2">Nosotros</a>
+            </div>
+            <div class="Nav__link">
+                <a href="./src/registro/form_registro.html" id="l3">Registrate</a>
+            </div>
+            <div class="Nav__link">
+                <a id="btn_ingreso" href="./src/ingreso/form_ingreso.html">
+                    <button class="Nav__btnIniciar">Iniciar Seccion<img src="./assets/arrow-up-right.svg" /></button>
+                </a>
+            </div>
+        </nav>
     </header>
     <!-- Main Section -->
     <main>
+
         <header class="Header__Principal">
-            <div class="Header__img">
-                <img src="./assets/botella.svg">
-            </div>
             <div class="Descripcion__Principal">
-                <h1>SoloLicores</h1>
+                <h1>¡Consigue las mejores ofertas!</h1>
                 <p>
-                    Buscando donde ir a comprar alchohol? <br>
-                    Encontraste el mejor lugar
+                    Encuentra una gran variedad de bebidas alcohólicas <br> a los mejores precios en nuestra tienda
+                    online
                 </p>
+                <button class="Descripcion__btn"><a href="./src/registro/form_registro.html">Comienza aqui</a></button>
+            </div>
+            <div class="video_Principal">
+                <video src="./assets/pexels-produtora-midtrack-1899147-1920x1080-30fps.mp4" autoplay muted loop></video>
             </div>
         </header>
+
         <section class="introduccion">
             <div class="intro_header">
                 <h2>SoloLicores te da las mejores ofertas de licores cerca
                     de su ubicacion</h2>
-                <p style="text-align: center;">Tambien brindamos una experiancia de usuario al dar recetas y
-                    recomendaciones de licores asi como ofertas exclusivas</p>
+                <p style="text-align: center;">Enriquecemos tu experiencia como usuario al proporcionar recetas y
+                    recomendaciones exclusivas de licores, además de ofrecerte ofertas imperdibles</p>
             </div>
             <div class="intro_experiencia">
                 <div class="card_exp">
@@ -59,9 +60,10 @@
                     </div>
                     <div class="card_exp_exp">
                         <p>
-                            — Open PRO lets me quickly get the insights I care about so that I can focus on my
-                            productive work. I've had Open PRO for about 24 hours now and I honestly don't know how I
-                            functioned without it before.
+                            "Me encanta la variedad de opciones que encontré en SoloLicores. Pude encontrar mi licor
+                            favorito a un precio increíble, ¡y estaba justo en mi vecindario! Además, las
+                            recomendaciones y recetas de licores son realmente útiles y me ayudaron a descubrir nuevos
+                            sabores y combinaciones."
                         </p>
                     </div>
                     <div class="card_exp_footer">
@@ -74,13 +76,14 @@
                     </div>
                     <div class="card_exp_exp">
                         <p>
-                            — Open PRO lets me quickly get the insights I care about so that I can focus on my
-                            productive work. I've had Open PRO for about 24 hours now and I honestly don't know how I
-                            functioned without it before.
+                            "Como amante de los licores, me encanta estar al día con las últimas tendencias y ofertas.
+                            Gracias a SoloLicores, siempre estoy informado sobre las promociones exclusivas de mi zona,
+                            lo que me permite ahorrar dinero y disfrutar de licores de alta calidad sin salir de mi
+                            presupuesto."
                         </p>
                     </div>
                     <div class="card_exp_footer">
-                        <p>Anastasia Dan - UX Board</p>
+                        <p>Ana Ramirez - Diseñadora gráfica senior</p>
                     </div>
                 </div>
                 <div class="card_exp">
@@ -89,13 +92,14 @@
                     </div>
                     <div class="card_exp_exp">
                         <p>
-                            — Open PRO lets me quickly get the insights I care about so that I can focus on my
-                            productive work. I've had Open PRO for about 24 hours now and I honestly don't know how I
-                            functioned without it before.
+                            "SoloLicores me ha cambiado por completo la forma de comprar licores. No solo puedo
+                            encontrar ofertas increíbles en línea, sino que también tengo acceso a recomendaciones y
+                            recetas personalizadas basadas en mis gustos y preferencias. Realmente valoro la experiencia
+                            personalizada y enriquecedora que ofrece SoloLicores."
                         </p>
                     </div>
                     <div class="card_exp_footer">
-                        <p>Anastasia Dan - UX Board</p>
+                        <p>Sofia Fernandez - Analista de datos financieros</p>
                     </div>
                 </div>
 
@@ -103,38 +107,47 @@
         <section class="tipo_cliente">
             <div class="intro_header">
                 <h2>Registrate en SoloLicores para disfrutar de beneficios exclusivos</h2>
-                <p style="text-align: center;">Al contratar SoloLicores tendras acceso a muchisimos beneficios asi como un kit de bienvenida</p>
+                <p style="text-align: center;">Al contratar en SoloLicores, disfrutarás de beneficios exclusivos y
+                    recibirás un kit de bienvenida. Obtén descuentos especiales, promociones y envío gratis en compras
+                    mayores a cierto monto. Únete a nuestra comunidad y vive una experiencia de compra única y
+                    satisfactoria.</p>
             </div>
             <div class="tipo_cliente_cards">
                 <div class="card card_free">
                     <span>
-                        <h3>Usuario Free</h3>
+                        <h3>Usuario Gratuito</h3>
                     </span>
+                    <p>Únete a SoloLicores y descubre el mundo de los licores.</p>
                     <ul>
-                        <li class="lista_free">Recomendaciones Mensuales</li>
-                        <li class="lista_free">Comparacion de licores limitada</li>
-                        <li class="lista_free">Con Anuncios</li>
+                        <li class="lista_free">Obtén acceso a nuestras recomendaciones mensuales</li>
+                        <li class="lista_free">Anuncios exclusivos</li>
+                        <li class="lista_free">¡Totalmente gratis!</li>
                     </ul>
                     <button type="button" class="btn_registrar"><a href="./src/registro/form_registro.html">
-                        Registrarse
-                    </a>
-                </button>
+                            Regístrate ahora
+                        </a>
+                    </button>
                 </div>
                 <div class="card card_premium">
                     <span>
-                        <h3>Usuario Premium</h3>
+                        <h3>Usuario Pro</h3>
                     </span>
+                    <p>¡Obtén los mejores beneficios como usuario Premium de SoloLicores!</p>
                     <ul>
-                        <li class="lista_premium">Recomendaciones Semanales</li>
-                        <li class="lista_premium">Comparacion de licores ilimitada</li>
-                        <li class="lista_premium">Sin Anuncios</li>
+                        <li class="lista_premium">Disfruta de recomendaciones semanales</li>
+                        <li class="lista_premium">Comparaciones detalladas</li>
+                        <li class="lista_premium">Anuncios exclusivos</li>
+                        <li class="lista_premium">Obtén descuentos especiales</li>
+                        <li class="lista_premium">Envío gratis en tus compras</li>
                     </ul>
                     <!-- Esto tiene que enviar a un registro especial... -->
-                    <button type="button" href="./src/registro/form_registro.html">Contratar</button>
+                    <button type="button" href="./src/registro/form_registro.html">Regístrate ahora</button>
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="footer__addr">
             <h1 class="footer__logo">SoloLicores</h1>
@@ -199,11 +212,6 @@
 
                     <li>
                         <a href="#">Terminos de uso</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Nuestra sede
-                        </a>
                     </li>
                 </ul>
             </li>

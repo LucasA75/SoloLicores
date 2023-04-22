@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-:root{
-    --blanco : #FFFFFF;
+:root {
+    --blanco: #FFFFFF;
     --fondoNegro: rgb(15 23 42);
-    --gris-400 : rgb(148 163 184);
+    --gris-400: rgb(148 163 184);
     --gris-500: rgb(100 116 139);
-    --gris-300 : rgb(203 213 225);
+    --gris-300: rgb(203 213 225);
+    --azulPrimario: #0070f0c3;
 }
+
+/* DEBUGGER */
+/* *{
+    border: 1px solid yellow;
+} */
 
 html {
     scroll-behavior: smooth;
@@ -25,22 +31,17 @@ body {
 
 /* NAVBAR */
 
-header {
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    color: white;
-}
-
-.Navbar{
+.Navbar {
     width: 100%;
     z-index: 5;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     position: fixed;
     display: flex;
     justify-content: space-between;
     align-content: center;
     overflow: hidden;
+    flex-wrap: wrap;
+    color: black;
 }
 
 .Navbar h2 {
@@ -50,30 +51,35 @@ header {
 .Nav__menu {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     gap: 30px;
+    width: 40%;
     margin-right: 50px;
 }
 
 .Nav__link a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 /* Boton NAVBAR */
 .Nav__btnIniciar {
     position: relative;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--azulPrimario);
     width: 10em;
     height: 3em;
     border-radius: 25px;
+    outline: none;
+    border: none;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1px;
     cursor: pointer;
+    color: white;
 }
 
-.Nav__btnIniciar img {
+.Nav__btnIniciar:hover img {
     animation-name: rotate;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -99,18 +105,23 @@ header {
     scale: 1.02;
 }
 
-@media  all and (max-width:1200px){
+@media all and (max-width:600px) {
 
-header{
-    overflow: hidden;
+    header {
+        overflow: hidden;
+    }
+
+    .Navbar{
+        flex-direction: column;
+    }
+
+    .Nav__menu:not(#btn_ingreso){
+        background-color: beige;
+        display: none;
+        
+    }
+
 }
-
-}
-
-
-
-
-
 
 /* MAIN */
 main {
@@ -121,131 +132,125 @@ main {
 
 /* MAIN IMAGE */
 .Header__Principal {
-    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(./assets/bg-alcohol-main.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     z-index: 1;
-    min-height: 100vh;
+    width: 100%;
+    min-height: 100dvh;
     color: white;
     display: flex;
-    flex-direction: row-reverse;
-    padding-bottom: 30px;
+    justify-content: center;
 }
 
-
-.Header__img{
-    margin-top: 20px;
-    width: 50%;
-    height: 30em;
+.video_Principal {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -2;
+    width: 100vw;
+    overflow: hidden;
     display: flex;
     justify-content: center;
-    align-self: center;
-    position: relative;
+
 }
 
-.Header__img img{
-    overflow: hidden;
-    transform: rotate(30deg);
-}
-
-.Header__img::before{
-    content: "";
+.video_Principal video {
     position: absolute;
-    width: 25em;
-    height: 120%;
-    border-radius: 300px;
-    top: -30px;
-    background-color: rgba(255, 255, 255, 0.628);
-    z-index: -1 !important;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -4;
     overflow: hidden;
-
+    opacity: 0.6;
 }
 
 .Descripcion__Principal {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center ;
+    align-items: center;
+    width: 70vw;
 }
 
-.Descripcion__Principal h1{
-    font-size: 8vw;
+.Descripcion__Principal h1 {
+    width: 90%;
+    font-size: 6vw;
     text-align: center;
+    margin: 0;
+    font-weight: 500;
 }
-.Descripcion__Principal p{
-    font-size: 1.4em;
+
+.Descripcion__Principal p {
+    font-size: 1.8em;
     width: 80%;
     text-align: center;
+    font-weight: 300;
 }
 
-@media  all and (max-width:900px) {
-    .Header__Principal{
-       display: flex;
-       flex-direction: column-reverse;
-       justify-content: flex-end;
-       align-items: center;
-       gap: 5%;
-       padding: 0;
-    }
+.Descripcion__btn {
+    border: none;
+    outline: none;
+    min-width: 30%;
+    padding: 0 15px;
+    height: 60px;
+    background-color: var(--azulPrimario);
 
-    .Descripcion__Principal {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items:center ;
-        margin-top: 45px;
-    }
+    font-size: 20px;
+}
 
-    .Descripcion__Principal h1{
+.Descripcion__btn:hover {
+    background-color: #0070f0fb;
+    cursor: pointer;
+}
+
+.Descripcion__btn a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+@media all and (max-width:900px) {
+
+    .Descripcion__Principal h1 {
         font-size: 3.5em;
 
     }
-
-    .Header__img{
-        margin-top: 20px;
-        width: 50%;
-        height: 15em;
-    }
-
-    .Header__img::before{
-        width: 80%;
-    }
-
 }
+
 /* MAIN SECCIONS */
 
 /* Intro */
 
-.introduccion{
+.introduccion {
     color: #FFFFFF;
     min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color:  var(--fondoNegro);
+    background-color: var(--fondoNegro);
 }
 
 /* Main_Intro */
-.intro_header{
+.intro_header {
     color: rgba(255, 255, 255, 0.963);
     width: 80%;
 }
 
-.intro_header h2{
-    text-align: center; font-size: 40px;
+.intro_header h2 {
+    text-align: center;
+    font-size: 40px;
     color: var(--gris-300);
 }
 
-.intro_header p{
+.intro_header p {
     font-size: 20px;
     color: var(--gris-400);
 }
 
 /* Main_EXP */
 
-.intro_experiencia{
+.intro_experiencia {
     color: black;
     display: flex;
     flex-direction: row;
@@ -255,53 +260,62 @@ main {
 
 
 
-.card_exp{
+.card_exp {
     width: 25%;
     color: #FFF9;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color:rgb(71 85 105);
+    background-color: rgb(71 85 105);
     padding: 30px;
 }
-.card_exp .card_exp_img{
+
+.card_exp .card_exp_img {
     margin-top: 10px;
 }
 
-.card_exp .card_exp_exp{
+.card_exp .card_exp_exp {
+    margin-top: 20px;
     width: 80%;
+    min-height: fit-content;
     padding: 0 10px;
     border-bottom: 1px solid var(--gris-500);
+}
+
+.card_exp_footer p{
+    margin: 0;
+    padding: 10px 0 ;
 }
 
 /* MAIN_EXP Responsive */
 
 @media screen and (max-width:800px) {
-    .intro_experiencia{
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
+    .intro_experiencia {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 15px;
     }
 
-    .card_exp{
+    .card_exp {
         width: 80%;
     }
 }
 
 
 /* Tipo de Clientes Section */
-.tipo_cliente .intro_header{
+.tipo_cliente .intro_header {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 
-.tipo_cliente_cards{
+.tipo_cliente_cards {
     min-height: 50vh;
     display: flex;
     flex-direction: row;
@@ -311,7 +325,7 @@ main {
     margin-bottom: 30px;
 }
 
-.tipo_cliente .card{
+.tipo_cliente .card {
     padding: 30px;
     margin: 50px 30px;
     box-shadow: 4px 10px 10px 5px rgba(0, 0, 0, 0.299);
@@ -322,7 +336,8 @@ main {
     align-items: center;
     background-color: #FFFFFF;
 }
-.tipo_cliente .card h3{
+
+.tipo_cliente .card h3 {
     font-size: 35px;
     height: 40px;
     width: 100%;
@@ -331,55 +346,74 @@ main {
     display: flex;
     align-items: center;
 }
-.tipo_cliente .card span{
+
+.tipo_cliente .card span {
     text-align: center;
     border-bottom: 1px solid black;
 }
 
 
-.tipo_cliente .card ul{
+.tipo_cliente .card ul {
     height: 230px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     font-size: large;
-    list-style-type: "👉  ";
+
 }
 
-.tipo_cliente .card:last-child{
-    background-color: #0070f0c3;
+.tipo_cliente .card:last-child button {
+
+    background-color: var(--azulPrimario);
+    color: white;
 }
 
 
-.tipo_cliente button{
+.tipo_cliente button {
     background-color: #FFFFFF;
     border: none;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.429);
     width: 100%;
     height: 10%;
-    border-radius: 25px;
     font-size: 20px;
     font-weight: 600;
+    outline: none;
+    border: 2px solid var(--azulPrimario);
+    padding: 10px 0;
 }
 
-.tipo_cliente .btn_registrar a{
+.tipo_cliente .btn_registrar a {
     text-decoration: none;
-    color: black;
+    color: var(--azulPrimario);
 }
 
-.tipo_cliente .btn_registrar a:link, .tipo_cliente .btn_registrar a:visited{
+.tipo_cliente .btn_registrar a:link,
+.tipo_cliente .btn_registrar a:visited {
     text-decoration: none;
+}
+
+/* Arreglar esto : Necesito que cuando haga hover en el btn el a tambien cambie de color */
+
+.tipo_cliente button:hover,
+button:focus {
+    background: var(--azulPrimario);
+    scale: 1.02;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+.tipo_cliente  a:hover, a:focus {
+    color: white;
 }
 
 
 /* TIPO CLIENTE RESPONSIVE */
 
-@media screen and (max-width:800px){
-    .tipo_cliente_cards{
+@media screen and (max-width:800px) {
+    .tipo_cliente_cards {
         flex-direction: column-reverse;
     }
 
-    .tipo_cliente .card{
+    .tipo_cliente .card {
         max-width: 60%;
         margin: 0 auto;
     }
@@ -387,27 +421,32 @@ main {
 
 /* Footer */
 
-.footer{
+.footer {
     background-color: #6c95fdc1;
     color: #FFFFFF;
     display: flex;
     justify-content: space-around;
     padding-bottom: 50px;
-    box-shadow:inset 0px 4px 5px -2px rgba(0,0,0,0.75);
-    width: 100vw;
+    box-shadow: inset 0px 4px 5px -2px rgba(0, 0, 0, 0.75);
+    width: 100%;
     flex-wrap: wrap;
 }
 
-.footer__nav{
+.footer__nav {
     display: flex;
     gap: 80px;
 }
 
-.footer__nav a{
+.footer__nav a {
+    color: white;
     text-decoration: none;
 }
 
-.nav__title{
+.footer__nav a:hover {
+    color: black;
+}
+
+.nav__title {
     text-align: center;
     list-style: none;
 }
@@ -417,7 +456,7 @@ main {
     text-decoration: none;
 }
 
-.footer__nav ul{
+.footer__nav ul {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -426,24 +465,25 @@ main {
 
 @media All and (max-width: 600px) {
 
-    .footer__addr{
-        text-align: center; 
+    .footer__addr {
+        text-align: center;
 
     }
 
 
-    .footer{
+    .footer {
         overflow: hidden;
         display: flex;
         flex-direction: column;
     }
-    .footer__nav{
+
+    .footer__nav {
         flex-direction: column;
         gap: 0;
         padding: 0;
     }
 
-    .footer__nav ul{
+    .footer__nav ul {
         list-style: none;
         display: flex;
         flex-direction: column;
