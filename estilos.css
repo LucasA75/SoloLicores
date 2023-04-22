@@ -40,7 +40,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 .Navbar h2 {
