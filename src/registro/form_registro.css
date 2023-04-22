@@ -1,27 +1,42 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 body {
-    background: #181818;
+    background-color: #0078e9;
+    background-image: linear-gradient(160deg, #005ff9 0%, #80D0C7 100%);
     color: #fff;
     line-height: 1.6;
     font-family: 'Quicksand', sans-serif;
     padding: 0 1.5em;
     display: flex;
     justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .formRegistro {
-    background: #222222;
-    width: 700px;
-    margin-top: 80px;  
-    border-radius: 10px; 
-   
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    width: 700px;  
+    padding: 40px 20px;
+   height: fit-content;
+   color: black;
 }
 .formRegistro h2 {
     text-align: center;
-    padding: 0.4em;
+    margin: 0 0 10px 0;
+    color: black;
+    font-size: 35px;
+}
+
+@media (max-width:350px) {
+    .formRegistro h2 {
+        font-size: 30px;
+    }
 }
 
 .formRegistro form {
@@ -39,33 +54,53 @@ body {
     padding: 1em;
 }
 
+.formRegistro > * > *{
+    margin: 4px 0;
+}
+
 .formRegistro form button,
 .formRegistro form input
  {
     width: 100%;
-    padding: .7em;
+    padding: .5em;
     border: none;
     background: none;
     outline: 0;
-    color: #fff;
-    border-bottom: 1px solid #d63031;
+    color: #000000;
+    border-bottom: 1px solid #000000;
 }
 .formRegistro form select{
     border-radius: 5px;
 }
 
+.registro__select{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.registro__select select{
+    width: 25%;
+}
+
 .formRegistro form button {
-    background: #B70E21;
+    margin-top: 5px;
+    background: #0078e9;
+    color: white;
+    font-weight: bolder;
     border: 0;
     border-radius: 5px;
     text-transform: uppercase;
     padding: 1em;
+    border: white;
 }
 
 .formRegistro form button:hover,
 .formRegistro form button:focus {
-    background: #d63031;
-    color: #fff;
+    background: rgba(118, 175, 32, 0.632);
+    scale: 1.02;
     transition: background-color 1s ease-out;
     outline: 0;
 }
