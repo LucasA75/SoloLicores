@@ -25,7 +25,7 @@ Node.js | Fastify | Firebase
 ## Como ocupar el proyecto ✨
  Para ver la **primera parte** de este proyecto ingresa a este enlace:
 
-[Deploy de la pagina en GH pages](https://markdown.es/sintaxis-markdown/)
+[Deploy de la pagina en GH pages](https://lucasa75.github.io/SoloLicores/)
 
 PD: No puedes ingresar al enlace iniciar seccion ya que eso esta en la 2 parte 😑
 
