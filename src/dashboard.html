@@ -5,6 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        const storageUser = localStorage.getItem("usuario")
+            if(storageUser== null){
+                //Si no esta authorizado
+                window.location = "form_ingreso.html";
+            }
+        
+        const objetoUsuario = JSON.parse(storageUser)
+        const token =  objetoUsuario.user.stsTokenManager.accessToken;
+
+            console.log(token)
+
+        const baseURL = "http://localhost:3000";
+        const url = baseURL + "/usuario/check"
+
+        fetch(url,{
+            method: "POST",
+            headers:{
+                'Content-Type':'application/json',
+                'authentication': 'Bearer '+token
+        },body: "{}"
+
+        })
+        .then(res => {
+            if(!res.ok){
+                throw new Error("Token no Valido") 
+            }
+        }).catch( error => window.location = "./ingreso/form_ingreso.html")
+            
+
+    </script>
 </head>
 <body>
     Hola xD
