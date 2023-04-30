@@ -42,6 +42,7 @@ body {
     overflow: hidden;
     flex-wrap: wrap;
     color: black;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.4);
 }
 
 .Navbar h2 {
@@ -52,9 +53,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 30px;
-    width: 40%;
-    margin-right: 50px;
+/*     width: 30%; */
+    gap: 50px;
+    margin-right: 30px;
 }
 
 .Nav__link a {
@@ -141,28 +142,42 @@ main {
     justify-content: center;
 }
 
+/* DIV VIDEO */
 .video_Principal {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
     position: absolute;
-    height: 100%;
+    min-height: inherit;
+    width: 100%;
     left: 0;
     top: 0;
     z-index: -2;
-    width: 100vw;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-
 }
 
 .video_Principal video {
     position: absolute;
     min-width: 100%;
     min-height: 100%;
+    object-fit:contain;
     z-index: -4;
     overflow: hidden;
     opacity: 0.6;
 }
+
+@media (max-width: 900px){
+    .video_Principal video {
+        left:-400px;
+    }
+}
+
+
+@media (max-width: 500px){
+    .video_Principal video {
+       scale: 0.7;
+       left:-800px;
+       top:-100px;
+    }
+}
+
 
 .Descripcion__Principal {
     display: flex;
@@ -213,7 +228,20 @@ main {
 
     .Descripcion__Principal h1 {
         font-size: 3.5em;
+        
+    }
+}
 
+@media all and (max-width:500px) {
+    .Descripcion__Principal{
+        margin-top: 100px;
+    }
+    .Descripcion__Principal h1 {
+        font-size: 3em;
+        width: 95vw;
+    }
+    .Descripcion__Principal p{
+        font-size: 1.5em;
     }
 }
 
@@ -416,6 +444,13 @@ button:focus {
     .tipo_cliente .card {
         max-width: 60%;
         margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:500px){
+    .tipo_cliente button {
+        margin-top: 20px;
+        padding: 10px;
     }
 }
 
