@@ -14,8 +14,6 @@ vemail.addEventListener("input", function (event) {
         vpassword2.classList.add("error");
         return "Las contraseñas no coinciden" 
     }}*/
-
-    //no logré hacer las validaciones :ccc
 });
 
 const form = document.querySelector("form");
@@ -34,7 +32,7 @@ form.addEventListener("submit", async (e)=>{
 
   /* Enviamos el objeto */
 
-  const baseUrl = "http://localhost:3000";
+  const baseUrl = getBaseUrl();
   const url = baseUrl + "/registro";
   const fetchConfig = {
     method: 'POST',
