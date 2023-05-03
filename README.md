@@ -27,47 +27,12 @@ Node.js | Fastify | Firebase
 
 [Deploy de la pagina en GH pages](https://lucasa75.github.io/SoloLicores/)
 
-PD: No puedes ingresar al enlace iniciar seccion ya que eso esta en la 2 parte 😑
-
-
-#
-Para ver la **segunda parte** del proyecto es necesario tener [Node.js](https://nodejs.org/en) instalado 
-
-- Primero clonar este repositorio o descargar el archivo zip
-~~~
-git clone https://github.com/LucasA75/TuCopete.git
-~~~
-
-- Segundo ejecutar este codigo en la terminal de la carpeta clonada
-~~~
-npm install
-~~~
- 
-Ya teniendo los node_modules instalados ejecuta este comando para iniciar el proyecto en la terminal
-
-~~~
-npm run start
-~~~
-
-Ya teniendo corriendo el proyecto puedes iniciar seccion!😎
-
 Credenciales🎫:
 ~~~
-Usuario: demo  |  Contraseña: 123
+Usuario: demo@gmail.com  |  Contraseña: Admin123
 ~~~
 
 Esperamos que sea de tu agrado!!! 🤗
-
-
-
-
-
-## Feedback
-
-Si tienes algun feedback que quieras compartir lo puedes hacer a :
-
-xdlukis77@gmail.com
-
 
 ## Authors
 
