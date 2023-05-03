@@ -61,6 +61,7 @@ body {
 .Nav__link a {
     text-decoration: none;
     color: black;
+    position: relative;
 }
 
 /* Boton NAVBAR */
@@ -122,6 +123,23 @@ body {
         
     }
 
+}
+
+.Nav__menu a:not(#btn_ingreso)::before{
+    content: " ";
+    position: absolute;
+    width: 5px;
+    height: 25px;
+    z-index: 5;
+    background-color: #000000;
+    top: -2px;
+    left: -10px;
+    opacity: 0;
+
+}
+
+.Nav__menu a:not(#btn_ingreso):hover::before{
+    opacity: 1;
 }
 
 /* MAIN */
@@ -285,8 +303,6 @@ main {
     justify-content: space-around;
     width: 90%;
 }
-
-
 
 .card_exp {
     width: 25%;
