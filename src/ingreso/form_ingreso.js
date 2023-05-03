@@ -25,7 +25,7 @@ form.addEventListener("submit", async (e) => {
 
   /* Enviamos el objeto */
 
-  const baseUrl = "http://localhost:3000";
+  const baseUrl = getBaseUrl();
   const url = baseUrl + "/login";
   const fetchConfig = {
     method: 'POST',
