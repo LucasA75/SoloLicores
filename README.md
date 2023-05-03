@@ -30,7 +30,7 @@ Node.js | Fastify | Firebase
 Para ingresar a la parte privada puedes , completar el formulario y ir al login o ocupar las siguientes
 Credenciales🎫:
 ~~~
-Usuario: demo@gmail.com  |  Contraseña: Admin123
+Usuario: admin@gmail.com  |  Contraseña: Admin123
 ~~~
 
 Esperamos que sea de tu agrado!!! 🤗
