@@ -23,10 +23,11 @@ React.js | Next.js | CSS
 Node.js | Fastify | Firebase
 
 ## Como ocupar el proyecto ✨
- Para ver la **primera parte** de este proyecto ingresa a este enlace:
+ Para ver este proyecto ingresa a este enlace:
 
 [Deploy de la pagina en GH pages](https://lucasa75.github.io/SoloLicores/)
 
+Para ingresar a la parte privada puedes , completar el formulario y ir al login o ocupar las siguientes
 Credenciales🎫:
 ~~~
 Usuario: demo@gmail.com  |  Contraseña: Admin123
