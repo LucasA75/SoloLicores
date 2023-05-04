@@ -95,6 +95,7 @@ body {
     text-transform: uppercase;
     padding: 1em;
     border: white;
+    cursor: pointer;
 }
 
 .formRegistro form button:hover,
