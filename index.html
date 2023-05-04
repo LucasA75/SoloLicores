@@ -19,10 +19,11 @@
             <div class="Nav__link">
                 <a href="./src/registro/form_registro.html" id="l3">Registrate</a>
             </div>
-            <div class="Nav__link">
-                <a id="btn_ingreso" href="./src/ingreso/form_ingreso.html">
-                    <button class="Nav__btnIniciar">Iniciar Seccion<img src="./assets/arrow-up-right.svg" /></button>
+            <div class="Nav__link" id="btn__inicio">
+                <a class="Nav__btnIniciar" href="./src/ingreso/form_ingreso.html">
+                    Iniciar Seccion
                 </a>
+                <img alt="flecha" src="./assets/arrow-up-right.svg" />
             </div>
         </nav>
     </header>
@@ -36,7 +37,9 @@
                     Encuentra una gran variedad de bebidas alcohólicas <br> a los mejores precios en nuestra tienda
                     online
                 </p>
-                <button class="Descripcion__btn"><a href="./src/registro/form_registro.html">Comienza aqui</a></button>
+                <div class="Descripcion__btn">
+                    <a href="./src/registro/form_registro.html">Comienza aqui</a>
+                </div>
             </div>
             <div class="video_Principal">
                 <video src="./assets/pexels-produtora-midtrack-1899147-1920x1080-30fps.mp4" autoplay muted loop></video>
@@ -53,7 +56,7 @@
             <div class="intro_experiencia">
                 <div class="card_exp">
                     <div class="card_exp_img">
-                        <img src="./assets/person1.avif">
+                        <img alt="Imagen Persona" src="./assets/person1.avif">
                     </div>
                     <div class="card_exp_exp">
                         <p>
@@ -69,7 +72,7 @@
                 </div>
                 <div class="card_exp">
                     <div class="card_exp_img">
-                        <img src="./assets/person2.avif">
+                        <img alt="Imagen Persona" src="./assets/person2.avif">
                     </div>
                     <div class="card_exp_exp">
                         <p>
@@ -85,7 +88,7 @@
                 </div>
                 <div class="card_exp">
                     <div class="card_exp_img">
-                        <img src="./assets/person3.jpg">
+                        <img alt="Imagen Persona" src="./assets/person3.jpg">
                     </div>
                     <div class="card_exp_exp">
                         <p>
@@ -99,7 +102,7 @@
                         <p>Sofia Fernandez - Analista de datos financieros</p>
                     </div>
                 </div>
-
+            </div>
         </section>
         <section class="tipo_cliente">
             <div class="intro_header">
@@ -111,24 +114,22 @@
             </div>
             <div class="tipo_cliente_cards">
                 <div class="card card_free">
-                    <span>
-                        <h3>Usuario Gratuito</h3>
-                    </span>
+                    <h3>Usuario Gratuito</h3>
                     <p>Únete a SoloLicores y descubre el mundo de los licores.</p>
                     <ul>
                         <li class="lista_free">Obtén acceso a nuestras recomendaciones mensuales</li>
                         <li class="lista_free">Anuncios exclusivos</li>
                         <li class="lista_free">¡Totalmente gratis!</li>
                     </ul>
-                    <button type="button" class="btn_registrar"><a href="./src/registro/form_registro.html">
+                    <div class="btn_registrar">
+                        <a href="./src/registro/form_registro.html">
                             Regístrate ahora
                         </a>
-                    </button>
+                    </div>
+
                 </div>
                 <div class="card card_premium">
-                    <span>
-                        <h3>Usuario Pro</h3>
-                    </span>
+                    <h3>Usuario Pro</h3>
                     <p>¡Obtén los mejores beneficios como usuario Premium de SoloLicores!</p>
                     <ul>
                         <li class="lista_premium">Disfruta de recomendaciones semanales</li>
@@ -138,7 +139,11 @@
                         <li class="lista_premium">Envío gratis en tus compras</li>
                     </ul>
                     <!-- Esto tiene que enviar a un registro especial... -->
-                    <button type="button" href="./src/registro/form_registro.html">Regístrate ahora</button>
+                    <div class="btn_registrar">
+                        <a href="./src/registro/form_registro.html">
+                           Contrata ahora
+                        </a> 
+                    </div>
                 </div>
             </div>
         </section>

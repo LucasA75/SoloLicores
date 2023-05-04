@@ -65,8 +65,7 @@ body {
 }
 
 /* Boton NAVBAR */
-.Nav__btnIniciar {
-    position: relative;
+.Nav__link:last-child{
     background-color: var(--azulPrimario);
     width: 10em;
     height: 3em;
@@ -81,7 +80,7 @@ body {
     color: white;
 }
 
-.Nav__btnIniciar:hover img {
+.Nav__link:last-child:hover img {
     animation-name: rotate;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -117,7 +116,7 @@ body {
         flex-direction: column;
     }
 
-    .Nav__menu:not(#btn_ingreso){
+    .Nav__menu:not(#btn__inicio){
         background-color: beige;
         display: none;
         
@@ -125,7 +124,8 @@ body {
 
 }
 
-.Nav__menu a:not(#btn_ingreso)::before{
+
+.Nav__menu a:not(#btn__inicio)::before{
     content: " ";
     position: absolute;
     width: 5px;
@@ -138,7 +138,7 @@ body {
 
 }
 
-.Nav__menu a:not(#btn_ingreso):hover::before{
+.Nav__menu a:not(#btn__inicio):hover::before{
     opacity: 1;
 }
 
@@ -227,19 +227,23 @@ main {
     padding: 0 15px;
     height: 60px;
     background-color: var(--azulPrimario);
-
     font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.Descripcion__btn a{
+    text-decoration: none;
+    color: white;
+    height: fit-content;
+    margin: auto 0;
 }
 
 .Descripcion__btn:hover {
     background-color: #0070f0fb;
     cursor: pointer;
-}
-
-.Descripcion__btn a {
-    text-decoration: none;
-    color: #FFFFFF;
-    font-weight: 600;
 }
 
 @media all and (max-width:900px) {
@@ -402,13 +406,9 @@ main {
     margin: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.153);
 }
-
-.tipo_cliente .card span {
-    text-align: center;
-    border-bottom: 1px solid black;
-}
-
 
 .tipo_cliente .card ul {
     height: 230px;
@@ -419,14 +419,9 @@ main {
 
 }
 
-.tipo_cliente .card:last-child button {
-
-    background-color: var(--azulPrimario);
-    color: white;
-}
 
 
-.tipo_cliente button {
+.tipo_cliente .btn_registrar {
     background-color: #FFFFFF;
     border: none;
     width: 100%;
@@ -436,11 +431,20 @@ main {
     outline: none;
     border: 2px solid var(--azulPrimario);
     padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;    
+}
+
+.tipo_cliente .card_premium p , .card_free p{
+    text-align: center;
 }
 
 .tipo_cliente .btn_registrar a {
+    margin: auto 0;
     text-decoration: none;
     color: var(--azulPrimario);
+    height: fit-content;
 }
 
 .tipo_cliente .btn_registrar a:link,
@@ -450,8 +454,8 @@ main {
 
 /* Arreglar esto : Necesito que cuando haga hover en el btn el a tambien cambie de color */
 
-.tipo_cliente button:hover,
-button:focus {
+.tipo_cliente .btn_registrar:hover,
+.btn_registrar:focus {
     background: var(--azulPrimario);
     scale: 1.02;
     transition: background-color 1s ease-out;
