@@ -16,11 +16,15 @@ Esta página cuenta con **2 partes**:
 #
 **Segunda parte** Privada esta hecha con:
 React.js | Next.js | CSS 
+El repositorio de este codigo es :
+[Next.js](https://github.com/LucasA75/Next.js_SoloLicores)
 
  **Restricción**: ocupo solamente display: Grid
 #
 **Back_end**
 Node.js | Fastify | Firebase
+El repositorio de este codigo es:
+[Backend Node.js](https://github.com/LucasA75/BackEnd_SoloLicores)
 
 ## Como ocupar el proyecto ✨
  Para ver este proyecto ingresa a este enlace:
