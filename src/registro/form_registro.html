@@ -33,7 +33,8 @@
 
                 <label for="password2">Repetir Contraseña:</label>
                 <input type="password" id="password2" name="password2" required><br>
-
+            <br>
+            <span style="display: none; margin: 0 auto;" id="resultadoPass"></span>
                 <div class="registro__select">
                     <label for="licor">Licor favorito:</label>
                     <select name="licor" id="licor">
@@ -48,10 +49,11 @@
                     </select><br>
                 </div>
 
-                <button type="submit">
+                <button id="btn__submit" type="submit">
                     Enviar 
                 </button>
         </form>
+        <span id="resultadoUsuario" style="display: none; margin: 0 auto; text-align: center; background-color: rgba(38, 255, 0, 0.397); padding: 10px;"></span>
     </main>
 </body>
 

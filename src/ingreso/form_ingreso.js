@@ -42,6 +42,10 @@ form.addEventListener("submit", async (e) => {
       // gestionar error o mensajes recibidos 
       console.error("La respuesta no está OK");
       titulo.appendChild(alerta)
+      setTimeout(() => {
+        titulo.removeChild(alerta)
+      }, 2500);
+      
       return;
     }
 
