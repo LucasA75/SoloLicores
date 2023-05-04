@@ -342,7 +342,8 @@ main {
 }
 
 .card_exp_footer p{
-    margin: 0;
+    margin: auto 0;
+    text-align: center;
     padding: 10px 0 ;
 }
 
