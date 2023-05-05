@@ -31,11 +31,21 @@ El repositorio de este codigo es:
 
 [Deploy de la pagina en GH pages](https://lucasa75.github.io/SoloLicores/)
 
+### Paginas disponibles sección publica:
+- Inicio 
+- Registro
+- Inicio Sesion
+- Productos
+
 Para ingresar a la parte privada puedes , completar el formulario y ir al login o ocupar las siguientes
 Credenciales🎫:
 ~~~
 Usuario: admin@gmail.com  |  Contraseña: Admin123
 ~~~
+
+### Paginas disponibles sección privada:
+- Inicio 
+- Perfil
 
 Esperamos que sea de tu agrado!!! 🤗
 
