@@ -60,7 +60,7 @@ form.addEventListener("submit", async (e) => {
     // guardo datos del usuario y TOKEN 
     localStorage.setItem('usuario', JSON.stringify(usuario));
     // redirijo a página protegida 
-    window.location = 'Categoria/index.html';
+    window.location = '../../categoria/index.html';
     /*window.location = '../dashboard.html'; */
   } catch (error) {
     // gestion errores 
