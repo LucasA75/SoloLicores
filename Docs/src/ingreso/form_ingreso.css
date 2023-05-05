@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "roboto", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0078e9;
+    background-image: linear-gradient(160deg, #005ff9 0%, #80D0C7 100%);
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+
+.form__ingreso {
+    position: relative;
+    width: 70vw;
+    height: 45vh;
+    max-width: 500px;
+    min-height: 500px;
+    min-width: 250px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    backdrop-filter: blur(35px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+}
+
+
+.form__ingreso h2 {
+    color: black;
+    font-size: 35px;
+}
+
+.form__ingreso form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form__ingreso .form_input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: black;
+}
+
+
+.form__ingreso .form_input input {
+    background: transparent;
+    border: none;
+
+    outline: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.619);
+}
+
+.form__ingreso button {
+    font-size: 18px;
+    margin: 0 auto;
+    width: 80%;
+    padding: 10px 0;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: black;
+    background-color: #0078e9;
+    color: white;
+    font-weight: bolder;
+}
+
+.form__ingreso button:hover, button:focus {
+    background: rgba(118, 175, 32, 0.632);
+    scale: 1.02;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+.bottom_form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.form__ingreso a ,a:link, a:visited {
+    text-decoration: none;
+    color:#0078e9;
+}
+
+
+.form__ingreso a:hover{
+    color: black;
+}
+
+
+/* DIV de error */
+
+.div_error{
+    position: absolute;
+    width: 80%;
+    color: red;
+    font-size: 18px;
+    left: 0;
+    transform: translate(15%);
+    margin-top: 10px;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.324);
+}

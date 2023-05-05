@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --blanco: #FFFFFF;
+    --fondoNegro: rgb(15 23 42);
+    --gris-400: rgb(148 163 184);
+    --gris-500: rgb(100 116 139);
+    --gris-300: rgb(203 213 225);
+    --azulPrimario: #0070f0c3;
+}
+
+/* DEBUGGER */
+/* *{
+    border: 1px solid yellow;
+} */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--fondoNegro);
+}
+
+
+
+/* NAVBAR */
+
+.Navbar {
+    width: 100%;
+    z-index: 5;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+    color: black;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.4);
+}
+
+.Navbar h2 {
+    margin-left: 15px;
+}
+
+.Nav__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+/*     width: 30%; */
+    gap: 50px;
+    margin-right: 30px;
+}
+
+.Nav__link a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+/* Boton NAVBAR */
+.Nav__link:last-child{
+    background-color: var(--azulPrimario);
+    width: 10em;
+    height: 3em;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    cursor: pointer;
+    color: white;
+}
+
+.Nav__link:last-child:hover img {
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+
+    from {
+        transform: 0;
+    }
+
+    50% {
+
+        transform: rotate(45deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.Nav__btnIniciar:hover {
+    scale: 1.02;
+}
+
+@media all and (max-width:600px) {
+
+    header {
+        overflow: hidden;
+    }
+
+    .Navbar{
+        flex-direction: column;
+    }
+
+    .Nav__menu:not(#btn__inicio){
+        background-color: beige;
+        display: none;
+        
+    }
+
+}
+
+
+.Nav__menu a:not(#btn__inicio)::before{
+    content: " ";
+    position: absolute;
+    width: 5px;
+    height: 25px;
+    z-index: 5;
+    background-color: #000000;
+    top: -2px;
+    left: -10px;
+    opacity: 0;
+
+}
+
+.Nav__menu a:not(#btn__inicio):hover::before{
+    opacity: 1;
+}
+
+/* MAIN */
+main {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* MAIN IMAGE */
+.Header__Principal {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    z-index: 1;
+    width: 100%;
+    min-height: 100dvh;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+/* DIV VIDEO */
+.video_Principal {
+    position: absolute;
+    min-height: inherit;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -2;
+    overflow: hidden;
+}
+
+.video_Principal video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit:contain;
+    z-index: -4;
+    overflow: hidden;
+    opacity: 0.6;
+}
+
+@media (max-width: 900px){
+    .video_Principal video {
+        left:-400px;
+    }
+}
+
+
+@media (max-width: 500px){
+    .video_Principal video {
+       scale: 0.7;
+       left:-800px;
+       top:-100px;
+    }
+}
+
+
+.Descripcion__Principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+}
+
+.Descripcion__Principal h1 {
+    width: 90%;
+    font-size: 6vw;
+    text-align: center;
+    margin: 0;
+    font-weight: 500;
+}
+
+.Descripcion__Principal p {
+    font-size: 1.8em;
+    width: 80%;
+    text-align: center;
+    font-weight: 300;
+}
+
+.Descripcion__btn {
+    border: none;
+    outline: none;
+    min-width: 30%;
+    padding: 0 15px;
+    height: 60px;
+    background-color: var(--azulPrimario);
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.Descripcion__btn a{
+    text-decoration: none;
+    color: white;
+    height: fit-content;
+    margin: auto 0;
+}
+
+.Descripcion__btn:hover {
+    background-color: #0070f0fb;
+    cursor: pointer;
+}
+
+@media all and (max-width:900px) {
+
+    .Descripcion__Principal h1 {
+        font-size: 3.5em;
+        
+    }
+}
+
+@media all and (max-width:500px) {
+    .Descripcion__Principal{
+        margin-top: 100px;
+    }
+    .Descripcion__Principal h1 {
+        font-size: 3em;
+        width: 95vw;
+    }
+    .Descripcion__Principal p{
+        font-size: 1.5em;
+    }
+}
+
+/* MAIN SECCIONS */
+
+/* Intro */
+
+.introduccion {
+    color: #FFFFFF;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--fondoNegro);
+}
+
+/* Main_Intro */
+.intro_header {
+    color: rgba(255, 255, 255, 0.963);
+    width: 80%;
+}
+
+.intro_header h2 {
+    text-align: center;
+    font-size: 40px;
+    color: var(--gris-300);
+    margin: 30px 0;
+}
+
+.intro_header p {
+    margin: 30px 0;
+    font-size: 20px;
+    color: var(--gris-400);
+}
+
+/* Main_EXP */
+
+.intro_experiencia {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.card_exp {
+    width: 25%;
+    color: #FFF9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(71 85 105);
+    padding: 30px;
+}
+
+.card_exp .card_exp_img {
+    width: 8em;
+    height: 8em;
+}
+
+.card_exp .card_exp_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 60px;
+}
+
+.card_exp .card_exp_exp {
+    margin-top: 10px;
+    width: 80%;
+    min-height: fit-content;
+    padding: 0 10px;
+    border-bottom: 1px solid var(--gris-500);
+}
+
+.card_exp_footer p{
+    margin: auto 0;
+    text-align: center;
+    padding: 10px 0 ;
+}
+
+/* MAIN_EXP Responsive */
+
+@media screen and (max-width:800px) {
+    .intro_experiencia {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .card_exp {
+        width: 80%;
+    }
+}
+
+
+/* Tipo de Clientes Section */
+.tipo_cliente .intro_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.intro_header h2{
+    margin: 50px 0;
+}
+
+.tipo_cliente_cards {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5em;
+    background-color: var(--fondoNegro);
+    margin-bottom: 30px;
+}
+
+.tipo_cliente .card {
+    padding: 30px;
+    margin: 50px 30px;
+    box-shadow: 4px 10px 10px 5px rgba(0, 0, 0, 0.299);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.tipo_cliente .card h3 {
+    font-size: 35px;
+    height: 40px;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.153);
+}
+
+.tipo_cliente .card ul {
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: large;
+
+}
+
+
+
+.tipo_cliente .btn_registrar {
+    background-color: #FFFFFF;
+    border: none;
+    width: 100%;
+    height: 10%;
+    font-size: 20px;
+    font-weight: 600;
+    outline: none;
+    border: 2px solid var(--azulPrimario);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;    
+}
+
+.tipo_cliente .card_premium p , .card_free p{
+    text-align: center;
+}
+
+.tipo_cliente .btn_registrar a {
+    margin: auto 0;
+    text-decoration: none;
+    color: var(--azulPrimario);
+    height: fit-content;
+}
+
+.tipo_cliente .btn_registrar a:link,
+.tipo_cliente .btn_registrar a:visited {
+    text-decoration: none;
+}
+
+/* Arreglar esto : Necesito que cuando haga hover en el btn el a tambien cambie de color */
+
+.tipo_cliente .btn_registrar:hover,
+.btn_registrar:focus {
+    background: var(--azulPrimario);
+    scale: 1.02;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+.tipo_cliente  a:hover, a:focus {
+    color: white;
+}
+
+
+/* TIPO CLIENTE RESPONSIVE */
+
+@media screen and (max-width:800px) {
+    .tipo_cliente_cards {
+        flex-direction: column-reverse;
+    }
+
+    .tipo_cliente .card {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:500px){
+    .tipo_cliente button {
+        margin-top: 20px;
+        padding: 10px;
+    }
+}
+
+/* Footer */
+
+.footer {
+    background-color: #6c95fdc1;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    box-shadow: inset 0px 4px 5px -2px rgba(0, 0, 0, 0.75);
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.footer__nav {
+    display: flex;
+    gap: 80px;
+}
+
+.footer__nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer__nav a:hover {
+    color: black;
+}
+
+.nav__title {
+    text-align: center;
+    list-style: none;
+}
+
+.nav__item {
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer__nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+@media All and (max-width: 600px) {
+
+    .footer__addr {
+        text-align: center;
+
+    }
+
+
+    .footer {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__nav {
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+    }
+
+    .footer__nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: 5px;
+    }
+}
